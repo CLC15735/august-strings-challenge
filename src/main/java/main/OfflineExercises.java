@@ -11,7 +11,13 @@ public class OfflineExercises {
 	// multChar("Hi-There") returns "HHHiii---TTThhheeerrreee"
 
 	public String multChar(String input) {
-		return "";
+		String output ="";
+		for (int i = 0; i < input.length(); i++) {
+			output += input.charAt(i);
+			output += input.charAt(i);
+			output += input.charAt(i);
+		}
+		return output;
 	}
 
 	// Return the string (backwards) that is between the first and last appearance
@@ -26,7 +32,12 @@ public class OfflineExercises {
 	// getBert("xxbeRTyy") returns ""
 
 	public String getBert(String input) {
-		return "";
+		String output = "";
+		
+		for (int i = input.length() -1 ; i >= 0; i--) {
+			output += input.charAt(i);
+		}
+		return output;
 	}
 
 	// Given three ints, a b c, one of them is small, one is medium and one is
